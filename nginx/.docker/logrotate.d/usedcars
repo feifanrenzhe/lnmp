@@ -1,0 +1,10 @@
+su root root
+/var/www/app/storage/logs/usedcars/usedcars.log {
+    daily
+    maxsize 100M
+    rotate 30
+    missingok
+    compress
+    delaycompress
+    copytruncate
+}

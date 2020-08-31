@@ -1,0 +1,32 @@
+/var/www/app/storage/logs/usedcars/usedcars.log {
+    daily
+    maxsize 100M
+    size 0
+    rotate 30
+    missingok
+    compress
+    delaycompress
+    copytruncate
+}
+
+/var/www/app/storage/logs/api/api_batch.log {
+    monthly  
+    maxsize 100M
+    size 0
+    rotate 12
+    missingok
+    compress
+    delaycompress
+    copytruncate
+}
+
+/var/www/app/storage/logs/api/api_request_info.log {
+    daily
+    maxsize 100M
+    size 0
+    rotate 90
+    missingok
+    compress
+    delaycompress
+    copytruncate
+}
