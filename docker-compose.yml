@@ -44,7 +44,6 @@ services:
       build:
         context: ./mariadb
         args:
-          - MARIADB_VERSION=${MARIADB_VERSION}
           - SYSTEM_TIMEZONE=${SYSTEM_TIMEZONE}
       environment:
         - MYSQL_DATABASE=${MARIADB_DATABASE}
