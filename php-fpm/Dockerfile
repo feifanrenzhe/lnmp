@@ -35,7 +35,7 @@ WORKDIR /var/www/app/
 RUN apt-get install -y logrotate cron
 
 #logrotate.d权限变更
-RUN chmod 644 -R /etc/logrotate.d/; chown root:root -R /etc/logrotate.d/; 
+RUN chmod 644 -R /etc/logrotate.d/; chown root:root -R /etc/logrotate.d/;
 
 #自启动设置
 #COPY ./entrypoint.sh /

@@ -17,7 +17,6 @@ services:
         - ${NGINX_LOGS}:/var/log/nginx/
         - ${NGINX_CONF}:/etc/nginx/nginx.conf
         - ${NGINX_VHOST80_CONF}:/etc/nginx/conf.d/default.conf
-#        - ${NGINX_LOGROTATE_CONF}:/etc/logrotate.d/
       ports:
        - "${NGINX_HOST_HTTP_PORT}:80"
        - "${NGINX_HOST_HTTPS_PORT}:443"
@@ -34,7 +33,6 @@ services:
         - ${PHP_FPM_WWW_CONF}:/usr/local/etc/php-fpm.d/www.conf
         - ${PHP_INI}:/usr/local/etc/php/php.ini
         - ${PHP_XDEBUG_INI}:/usr/local/etc/php/conf.d/20-xdebug.ini
-        - ${PHP_LOGROTATE_CONF}:/etc/logrotate.d/
       networks:
         - frontend
       restart: always
