@@ -37,6 +37,19 @@ services:
         - frontend
       restart: always
 
+### xun-search ########################################
+    xun-search:
+      build:
+        context: ./xun-search
+      environment:
+        - XS_APP_ROOT:${XS_APP_ROOT}
+      ports:
+       - 8383:8383
+       - 8384:8384
+      networks:
+        - frontend
+      restart: always
+
 ### MariaDB ################################################
     mariadb:
       build:
