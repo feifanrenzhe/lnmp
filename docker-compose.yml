@@ -28,6 +28,8 @@ services:
     php-fpm:
       build:
         context: ./php-fpm
+      environment:
+        - XS_APP_ROOT=${XS_APP_ROOT}
       volumes:
         - ${NGINX_APP_SRC}:${NGINX_APP_DST}
         - ${PHP_FPM_WWW_CONF}:/usr/local/etc/php-fpm.d/www.conf
@@ -41,8 +43,6 @@ services:
     xun-search:
       build:
         context: ./xun-search
-      environment:
-        - XS_APP_ROOT:${XS_APP_ROOT}
       ports:
        - 8383:8383
        - 8384:8384
