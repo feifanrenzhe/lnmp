@@ -13,5 +13,8 @@
     "license": "MIT",
     "authors": [
         {"name": "feifanrenzhe", "email": "feifanrenzhe@qq.com"}
-    ]
+    ],
+    "require-dev": {
+        "predis/predis": "~1.0"
+    }
 }
