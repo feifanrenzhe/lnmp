@@ -4,11 +4,13 @@
     "type": "library",
     "description": "docker-compose的LNMP环境",
     "keywords": [
-        "lnmp",
-        "redis",
         "docker",
+        "docker-compose",
+        "nginx",
         "mariadb",
-        "php-fpm"
+        "php-fpm",
+        "redis",
+        "xunsearch"
     ],
     "license": "MIT",
     "authors": [
