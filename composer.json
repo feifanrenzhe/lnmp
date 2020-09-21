@@ -3,6 +3,7 @@
     "version": "1.0.1",
     "type": "library",
     "description": "docker-compose的LNMP环境",
+    "homepage": "https://github.com/feifanrenzhe/lnmp",
     "keywords": [
         "docker",
         "docker-compose",
@@ -15,5 +16,10 @@
     "license": "MIT",
     "authors": [
         {"name": "feifanrenzhe", "email": "feifanrenzhe@qq.com"}
-    ]
+    ],
+    "extra": {
+        "branch-alias": {
+            "dev-master": "1.0.1"
+        }
+    },
 }
