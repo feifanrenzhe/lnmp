@@ -1,5 +1,5 @@
 {
-    "name": "ffrz/lnmp",
+    "name": "feifanrenzhe/lnmp",
     "version": "1.0.1",
     "type": "library",
     "description": "docker-compose的LNMP环境",
@@ -10,7 +10,6 @@
         "mariadb",
         "php-fpm"
     ],
-    "homepage": "https://e.coding.net/ffrz/lnmp/lnmp.git",
     "license": "MIT",
     "authors": [
         {"name": "feifanrenzhe", "email": "feifanrenzhe@qq.com"}
