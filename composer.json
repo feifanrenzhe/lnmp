@@ -14,6 +14,9 @@
     "authors": [
         {"name": "feifanrenzhe", "email": "feifanrenzhe@qq.com"}
     ],
+    "require": {
+        "predis/predis": "~1.0"
+    }
     "require-dev": {
         "predis/predis": "~1.0"
     }
