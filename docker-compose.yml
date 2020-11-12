@@ -22,7 +22,7 @@ services:
        - "${NGINX_HOST_HTTPS_PORT}:443"
       networks:
         - frontend
-      restart: always
+#      restart: always
 
 ### Php-fpm ########################################
     php-fpm:
@@ -37,7 +37,7 @@ services:
         - ${PHP_XDEBUG_INI}:/usr/local/etc/php/conf.d/20-xdebug.ini
       networks:
         - frontend
-      restart: always
+#      restart: always
 
 ### MariaDB ################################################
     mariadb:
